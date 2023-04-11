@@ -1,0 +1,55 @@
+<!-- This is an XML file that describes a RelativeLayout containing several views -->
+
+<!-- Define the XML namespace for the Android platform -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:gravity="center">
+
+    <!-- Define a TextView for the product name label -->
+    <TextView
+        android:id="@+id/product_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product name"
+        android:textSize="18sp"/>
+
+    <!-- Define an EditText for the product name input -->
+    <EditText
+        android:id="@+id/product_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_label"/>
+
+    <!-- Define a TextView for the product price label -->
+    <TextView
+        android:id="@+id/product_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_edittext"
+        android:layout_marginTop="16dp"
+        android:text="Product Price $"
+        android:textSize="18sp"/>
+
+    <!-- Define an EditText for the product price input -->
+    <EditText
+        android:id="@+id/product_price_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/product_price_label"/>
+
+    <!-- Define a Button for writing the data to an NFC tag -->
+    <Button
+        android:id="@+id/write_nfc_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_price_edittext"
+        android:layout_marginTop="24dp"
+        android:text="Write"/>
+
+</RelativeLayout>
+    <!-- End of the RelativeLayout -->

@@ -1,0 +1,28 @@
+<!-- This is an XML file that describes a RelativeLayout containing two buttons -->
+
+<!-- Define the XML namespace for the Android platform -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Define the first button with an ID of "read_button" -->
+    <Button
+        android:id="@+id/read_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <!-- Define the second button with an ID of "write_button", below the first button -->
+    <Button
+        android:id="@+id/write_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/read_button" />
+
+</RelativeLayout>
+    <!-- End of the RelativeLayout -->

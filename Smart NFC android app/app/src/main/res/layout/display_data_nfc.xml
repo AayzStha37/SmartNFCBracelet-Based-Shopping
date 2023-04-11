@@ -1,0 +1,90 @@
+<!-- This is an XML file that describes a LinearLayout containing a cart summary and checkout button -->
+
+<!-- Define the XML namespace for the Android platform -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Text view for the cart summary -->
+    <TextView
+        android:id="@+id/cart_summary_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CART SUMMARY"
+        android:textStyle="bold"
+        android:paddingBottom="40dp"
+        android:textSize="20sp" />
+
+    <!-- Horizontal LinearLayout for product names and prices -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="40dp">
+
+        <!-- ListView for product names -->
+        <ListView
+            android:id="@+id/list_view_prodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:gravity="left" />
+
+        <!-- ListView for product prices -->
+        <ListView
+            android:id="@+id/list_view_prodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <!-- Horizontal LinearLayout for cart total -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="40dp">
+
+        <!-- TextView for cart total label -->
+        <TextView
+            android:id="@+id/cart_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL"
+            android:textSize="20sp" />
+
+        <!-- TextView for cart total amount -->
+        <TextView
+            android:id="@+id/cart_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="$ 0.0"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <!-- Button for checkout -->
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:textSize="18sp" />
+
+</LinearLayout>
+    <!-- End of the LinearLayout -->

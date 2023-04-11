@@ -1,0 +1,81 @@
+<!-- This is an XML file that describes a RelativeLayout containing various elements -->
+
+<!-- Define the XML namespace for the Android platform -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Define the "Product Information" TextView -->
+    <TextView
+        android:id="@+id/prod_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:text="PRODUCT INFORMATION"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Define the "Product Name" and its value in a horizontal LinearLayout -->
+    <LinearLayout
+        android:id="@+id/lv_prodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/prod_info"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT NAME"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/shop_prod_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <!-- Define the "Product Price" and its value in a horizontal LinearLayout -->
+    <LinearLayout
+        android:id="@+id/lv_prodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="100dp"
+        android:layout_below="@id/lv_prodName"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT PRICE"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/shop_prod_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <!-- Define the "Proceed" button below the previous elements -->
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_prodPrice"
+        android:layout_centerInParent="true"
+        android:text="Proceed" />
+
+</RelativeLayout>
+    <!-- End of the RelativeLayout -->

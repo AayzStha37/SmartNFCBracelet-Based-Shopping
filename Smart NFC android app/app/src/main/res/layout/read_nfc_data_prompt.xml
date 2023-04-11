@@ -1,0 +1,30 @@
+<!-- This is an XML file that describes a RelativeLayout containing an ImageView and a TextView -->
+
+<!-- Define the XML namespace for the Android platform -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Define the ImageView with an ID of "nfc_image" -->
+    <ImageView
+        android:id="@+id/nfc_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/nfc_logo"
+        android:layout_centerInParent="true"/>
+
+    <!-- Define the TextView with an ID of "scan_text", below the ImageView -->
+    <TextView
+        android:id="@+id/scan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scanning NFC data ..."
+        android:textSize="18sp"
+        android:layout_below="@id/nfc_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
+    <!-- End of the RelativeLayout -->

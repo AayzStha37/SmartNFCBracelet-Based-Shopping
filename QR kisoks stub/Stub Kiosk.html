@@ -1,0 +1,66 @@
+<!-- This is an HTML file for a web page that collects user input for their membership number and redirects them to a website using JavaScript. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kiosk Stub example</title>
+	<!-- This is a CSS style block that applies styling to the page. -->
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		img {
+			display: block;
+			margin-bottom: 20px;
+		}
+		
+		#number {
+			padding: 10px;
+		}
+		
+		label {
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- This is the main form that collects user input. -->
+	<form>
+		<!-- This is an image that is displayed on the page. -->
+		<img src="kiosk.jpg" alt="Image">
+		<!-- This is a label for the input field that tells users what to enter. -->
+		<label for="number">Enter your membership number:</label>
+		<br>
+		<!-- This is the input field where users enter their membership number. -->
+		<input type="number" id="number" name="number" required>
+		<br><br>
+		<!-- This is a button that users click to submit the form. -->
+		<button type="submit">Proceed</button>
+	</form>
+	<!-- This is a JavaScript script that runs when the form is submitted. -->
+	<script>
+		document.querySelector('form').addEventListener('submit', function(event) {
+			event.preventDefault(); // prevent the form from submitting normally
+			
+			// This line of code gets the value that the user entered for their membership number.
+			var number = document.getElementById('number').value;
+			// This line of code sets the URL that the user will be redirected to.
+			var url = 'http://localhost/QR_dummy.png'; // replace example.com with the website you want to go to
+			// This line of code redirects the user to the URL that was set above.
+			window.location.href = url;
+		});
+	</script>
+</body>
+</html>
