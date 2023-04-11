@@ -3,7 +3,7 @@ A UbiComp based approach to study a feasible alternative to conventional self-ch
 
 # DEPLOYMENT GUIDE 
 
-1. Target Audience 
+## 1. Target Audience 
 
 The target audience for this deployment plan is Android smartphone users who have some basic technical knowledge with prior knowledge of building and running Android applications. 
 
