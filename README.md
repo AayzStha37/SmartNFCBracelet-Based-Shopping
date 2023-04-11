@@ -75,7 +75,7 @@ Once the application is installed, on the home screen, you would get two buttons
 
 - On your PC, navigate to the C:\inetpub\wwwroot directory and paste the test folder. 
 
-3.3.1 WRITE mode. 
+#### 3.3.1 WRITE mode. 
 
 - Enable NFC on the smartphone or else you would be asked to turn it on by being automatically directed to the settings menu on clicking the RW Mode button. 
 
@@ -85,7 +85,7 @@ Once the application is installed, on the home screen, you would get two buttons
 
 - If the data is successfully written onto the tag, you would get a toast with a success message. Alternatively, if an error is encountered, you would get an error message and you have to press the Write button again. 
 
-3.3.2 READ mode. 
+#### 3.3.2 READ mode. 
 
 - Install any NFC writer app from Google Play Store (NFC Tools) and using it, write the product list JSON data (Appendix 6.2) onto the NFC tag. (The requirement for a third-party app to write the data is because currently, the app’s Write Mode doesn’t support random text entry.) 
 
@@ -95,7 +95,7 @@ Once the application is installed, on the home screen, you would get two buttons
 
 - Tap the smartphone’s NFC sensor onto the tag and you would get a “New Tag detected” prompt. Click on the OK button and you can see the list of items that are part of the cart as a list that can be checked out. 
 
-3.3.3 SHOP mode/WoZ mode. 
+#### 3.3.3 SHOP mode/WoZ mode. 
 
 This mode as part of the evaluation was carried out with the help of an external NFC reader which was part of the hardware implementation to perform the WoZ technique. However, even without the NFC reader, the process can be replicated by following the below-mentioned steps. 
 
