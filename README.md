@@ -7,7 +7,7 @@ A UbiComp based approach to study a feasible alternative to conventional self-ch
 
 The target audience for this deployment plan is Android smartphone users who have some basic technical knowledge with prior knowledge of building and running Android applications. 
 
-2. Prerequisites 
+## 2. Prerequisites 
 
 Before proceeding with the deployment, make sure the following prerequisites are met: 
 
@@ -21,9 +21,9 @@ Before proceeding with the deployment, make sure the following prerequisites are
 
 - The user has installed Git, Java Development Kit (JDK version 8+), and Android Studio (version 3.3+) 
 
-3. Step-by-Step Instructions 
+## 3. Step-by-Step Instructions 
 
-3.1 Cloning the Repository 
+### 3.1 Cloning the Repository 
 
 - Open the command prompt or terminal on your desktop. 
 
@@ -33,7 +33,7 @@ Before proceeding with the deployment, make sure the following prerequisites are
 
 - Enter your Git credentials, if prompted. 
 
-3.2 Build and Install the Android application. 
+### 3.2 Build and Install the Android application. 
 
 - Open the command prompt or terminal on your desktop and enter the command ipconFigure. From the list of IP addresses, copy the IPv4 address. 
 
@@ -61,7 +61,7 @@ Before proceeding with the deployment, make sure the following prerequisites are
 
 - Click on OK to install the app on your smartphone. Wait for the app to finish installing, the app should launch itself. You should now be able to test the app on your phone and use it just as you would any other app. 
 
-3.3 Testing the application. 
+### 3.3 Testing the application. 
 
 Once the application is installed, on the home screen, you would get two buttons; one for Shop mode and another for RW(Read/Write) mode. On clicking either, you would be prompted to each functionality provided by the app such that the former mode is used by a user administrator while the latter mode(s) are used by the shoppers in general. As a pre-requisite, on your PC you have to enable Internet Information Services by following the steps viz. 
 
